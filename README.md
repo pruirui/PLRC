@@ -9,7 +9,7 @@ Note our method is plug-in method. Here we provide implementation base on PaPi [
 
 We provide the following shell codes for PaPi running with our method. 
 
-**Getting started**
+### Getting started
 
 - Create directory `../data` (if `../data` does not exist)
 - We employed BLIP-2 as the feature extractor based on the open-source library LAVIS[<sup>2</sup>](#refer-anchor-1), thereby securing a more reliable $K$-neighbor relationship. Features can be extracted using either of the following two methods:
@@ -17,7 +17,7 @@ We provide the following shell codes for PaPi running with our method.
   - Alternatively, you can directly download [the pre-extracted features](https://drive.google.com/drive/folders/1DdtBqI1zjNjbIB1BZqJ8CiqFf1MvHzSb?usp=sharing) and decompress them into the directory `../data`. 
 
 
-**Start Running**
+### Start Running
 
 <details>
 <summary>
@@ -59,7 +59,22 @@ CUDA_VISIBLE_DEVICES=1  nohup python -u train.py --exp-dir ./experiment --datase
 
 </details>
 
-
+## Citation
+If our work assists your research, feel free to give us a star ⭐ or cite us using:
+```
+@inproceedings{iclr25peng,
+  author       = {Xiaorui Peng and
+                  Yuheng jia and
+                  Fuchao Yang and
+                  Ran Wang and
+                  Min-Ling Zhang},
+  title        = {Noise Separation guided Candidate Label Reconstruction for Noisy Partial Label Learning},
+  booktitle    = {The Thirteenth International Conference on Learning Representations, {ICLR}
+                  2025, Singapore, April 24-28, 2025},
+  year         = {2025}
+}
+```
+## Reference
 
 <div id="refer-anchor-1"></div>
 
